@@ -1,0 +1,110 @@
+/* INFO: Container Styles */
+
+div.container {
+    width:  25rem;
+    height: 38rem;
+    background-color: var(--beige);
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--semi-black);
+    border-radius: 2rem;
+}
+
+section.todo-list {
+    width: 14rem;
+    height: 4rem;
+    margin-top: 2.3rem;
+    text-align: center;
+    background-color: var(--semi-black);
+    color: var(--beige);
+    transform: rotate(5deg);
+    border-bottom-right-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+section.todo-list:first-child {
+    font-size: 1.7rem;
+}
+
+section.add-todo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.add-todo input {
+    height: 2rem;
+    width: 16rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--semi-black);
+}
+
+section.add-todo input:focus {
+    outline: none;
+}
+
+section.add-todo button {
+    width: 4rem;
+    margin-left: 1.5rem;
+    background-color: var(--semi-black);
+    color: var(--beige);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+section.list {
+    padding: 1rem 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+section.list div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.list ul li {
+    list-style-position: inside;
+    width: 90%;
+    line-height: 1.5;
+    margin-top: .2rem;
+    overflow: hidden;
+}
+
+section.list div button {
+    background: transparent;
+    border: none;
+    margin-top: .1rem;
+    cursor: pointer;
+}
+
+/* INFO: Attribute Style */
+
+div.attribute {
+    margin-top: .5rem;
+    text-align: center;
+}
+
+div.attribute p {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+div.attribute p a {
+    color: var(--semi-black);
+    font-weight: bold;
+    text-underline-offset: 3px;
+}
+
+@media only screen and (max-width: 480px) {
+    div.container {
+        width: 23rem;
+    }
+}
