@@ -1,6 +1,6 @@
 # To-Do List
 
-A simple project to learn more about useState() Hook using React. To make new to-do just type in input field and push "Add" button, this create new `<li>` tag and show it.
+A simple project to learn more about useState() Hook using React. To make new to-do just type in input field and push "Add" button, this create new `<li>` tag and show it. If you can see my project [click here](https://to-do-list-three-jade-41.vercel.app/). Also you can give me feedback.
 
 
 ## Screenshot
