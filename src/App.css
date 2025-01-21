@@ -116,12 +116,12 @@ div.attribute p a {
         width: 100%;
     }
     section.add-todo input {
-        width: 21rem;
+        width: 17rem;
         height: 3rem;
         font-size: 1.2rem;
     }
     section.add-todo button {
-        width: 5.5rem;
+        width: 4.2rem;
     }
     section.todo-list {
         margin-bottom: 3rem;
