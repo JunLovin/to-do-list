@@ -103,6 +103,8 @@ div.attribute p a {
     text-underline-offset: 3px;
 }
 
+/* INFO: MEDIAQUERIE FOR RESPONSIVE DESIGN IN MOBILE */
+
 @media only screen and (max-width: 480px) {
     div.container {
         width: 100%;
@@ -142,5 +144,3 @@ div.attribute p a {
         overflow: hidden;
     }
 }
-
-/* FIXME: Li overlap when it's too large */
