@@ -11,7 +11,7 @@ function App() {
     if (inputValue) {
       setTodo((prev) => [
         ...prev,
-        {ID: todo.length, value: inputValue},
+        {ID: crypto.randomUUID(), value: inputValue},
       ]);
     }
     input.value = ''
@@ -35,8 +35,8 @@ function App() {
         <ul>
           {todo.map((element, i) => {
             return (<>
-            <div>
-            <li key={element.ID + 1}>{element.value}</li>
+            <div onMouseOver={console.log(element.ID)}>
+            <li key={element.ID}>{element.value}</li>
             <button onClick={() => remove(i)}><img src={XIcon} alt="x button" /></button>
             </div>
             </>)
