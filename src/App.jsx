@@ -11,7 +11,7 @@ function App() {
     if (inputValue) {
       setTodo((prev) => [
         ...prev,
-        {ID: crypto.randomUUID(), value: inputValue},
+        { value: inputValue, ID: crypto.randomUUID() },
       ]);
     }
     input.value = ''
