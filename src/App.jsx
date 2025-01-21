@@ -21,6 +21,11 @@ function App() {
     newIndex.splice(index, 1)
     setTodo(newIndex);
   }
+  const addTodoWithEnterKey = (e) => {
+    if (e.key === 'Enter') {
+      addTodo()      
+    }
+  }
   return (
     <>
     <div className="container">
@@ -28,14 +33,14 @@ function App() {
         <h1>To-Do List</h1>
       </section>
       <section className="add-todo">
-        <input type="text" placeholder='Make dinner...' id="todo"/>
+        <input type="text" placeholder='Make dinner...' id="todo" onKeyDown={addTodoWithEnterKey} onChange={addTodoWithEnterKey} />
         <button onClick={addTodo}>Add</button>
       </section>
       <section className="list">
         <ul>
           {todo.map((element, i) => {
             return (<>
-            <div onMouseOver={console.log(element.ID)}>
+            <div>
             <li key={element.ID}>{element.value}</li>
             <button onClick={() => remove(i)}><img src={XIcon} alt="x button" /></button>
             </div>
